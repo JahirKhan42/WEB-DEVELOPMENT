@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="api/login">
+        <label for="mail">Email: </label>
+        <input type="email" id="mail" name="mail">
+        <br/>
+        <label for="pw">Password: </label>
+        <input type="password" id="pw" name="pw">
+        <br/>
+        <input type="submit" value="Login">
+        <br/>
+        <input type="checkbox" id="ck" name="ck">
+        <label for="ck">Remember me</label>
+      </form>
+
+      
+      Form Attribute
+name	Name of form for scripting
+action	URL of form script
+method	HTTP method, POST / GET (default)
+enctype	Media type, See enctype
+onsubmit	Runs when the form was submit
+onreset	Runs when the form was reset
+
+Label tags
+
+<!-- Nested label -->
+<label>Click me 
+<input type="text" id="user" name="name"/>
+</label>
+
+<!-- 'for' attribute -->
+<label for="user">Click me</label>
+<input id="user" type="text" name="name"/>
+
+Input tags
+
+<label for="Name">Name:</label>
+<input type="text" name="Name" id="">
+
+Textarea tags
+
+<textarea rows="2" cols="30" name="address" id="address"></textarea>
+
+Radio Buttons
+
+<input type="radio" name="gender" id="m">
+<label for="m">Male</label>
+<input type="radio" name="gender" id="f">
+<label for="f">Female</label>
+
+Checkboxes
+
+<input type="checkbox" name="s" id="soc">
+<label for="soc">Soccer</label>
+<input type="checkbox" name="s" id="bas">
+<label for="bas">Baseball</label>
+
+Select tags
+
+<label for="city">City:</label>
+<select name="city" id="city">
+    <option value="1">Sydney</option>
+    <option value="2">Melbourne</option>
+    <option value="3">Cromwell</option>
+</select>
+
+Fieldset tags
+
+<fieldset>
+    <legend>Your favorite monster</legend>
+    <input type="radio" id="kra" name="m">
+    <label for="kraken">Kraken</label><br/>
+    <input type="radio" id="sas" name="m">
+    <label for="sas">Sasquatch</label>
+</fieldset>
+
+Datalist tags(HTML5)
+
+<label for="b">Choose a browser: </label>
+<input list="list" id="b" name="browser"/>
+<datalist id="list">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Internet Explorer">
+  <option value="Opera">
+  <option value="Safari">
+  <option value="Microsoft Edge">
+</datalist>
+
+Submit and Reset Buttons
+
+<form action="register.php" method="post">
+  <label for="foo">Name:</label>
+  <input type="text" name="name" id="foo">
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+type="checkbox"	
+type="radio"	
+type="file"	 
+type="hidden"	
+type="text"	
+type="password"	
+type="image"	
+type="reset"	
+type="button"	
+type="submit"	
+New Input Types in HTML5
+type="color"	
+type="date"	
+dd-mm-yyyy
+type="time"	
+--:--
+type="month"	
+---------, ----
+type="datetime-local"	
+dd-mm-yyyy --:--
+type="week"	
+Week --, ----
+type="email"	
+type="tel"	
+type="url"	
+type="number"	
+type="search"	
+type="range"	
+
+<input type="text" name="?" value="?" minlength="6"	 required />
+type="…"	The type of data that is being input
+value="…"	Default value
+name="…"	Used to describe this data in the HTTP request
+id="…"	Unique identifier that other HTML elements
+readonly	Stops the user from modifying
+disabled	Stops any interaction
+checked	The radio or checkbox select or not
+required	Being compulsory, See required
+placeholder="…"	Adds a temporary, See ::placeholder
+autocomplete="off"	Disable auto completion
+autocapitalize="none"	Disable auto capitalization
+inputmode="…"	Display a specific keyboard, See inputmode
+list="…"	The id of an associated datalist
+maxlength="…"	Maximum number of characters
+minlength="…"	Minimum number of characters
+min="…"	Minimum numerical value on range & number
+max="…"	Maximum numerical value on range & number
+step="…"	How the number will increment in range & number
+pattern="…"	Specifies a Regular expression, See pattern
+autofocus	Be focused
+spellcheck	Perform spell checking
+multiple	Whether to allow multiple values
+accept=""	Expected file type in file upload controls
+</body>
+</html>
