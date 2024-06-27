@@ -1,0 +1,58 @@
+<!DOCTYPE html>+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+        .container h1{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        img{
+            width: 300px;
+        }
+        .image-area{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .single-image{
+            padding: 0 20px 20px;
+        }
+        img:hover{
+            opacity: 0.5;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flexbox Image Gallery</h1>
+
+      <div class="image-area">
+        <div class="single-image">
+          <img src="/IMG-20240424-WA0013.jpg" alt="" />
+        </div>
+        <div class="single-image">
+          <img src="/IMG-20240425-WA0009.jpg" alt="" />
+        </div>
+        <div class="single-image">
+          <img src="/IMG_20230527_195739_134.jpg" alt="" />
+        </div>
+        <div class="single-image">
+          <img src="/IMG_20230604_062648.jpg" alt="" />
+        </div>
+        <div class="single-image">
+          <img src="/IMG_20230912_222630_285.jpg" alt="" />
+        </div>
+        <div class="single-image">
+          <img src="/IMG_20231223_164253.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

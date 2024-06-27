@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        background-color: cyan;
+        color: orange;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: green;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      body {
+        background-color: red;
+      }
+      .boxes{
+        display: flex;
+      }
+
+      .box{
+        width: 344px;
+        height: 344px;
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      @media screen and (orientation : portrait){
+        body{
+            border: 5px solid green;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        body {
+          background-color: blue;
+        }
+
+        .boxes{
+            flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h3>Change the window size to change the background color</h3> -->
+
+    <div class="boxes">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+
+    <!-- <div class="header">
+        <h1>This is LearnVern</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-m-3 menu">
+            <ul>
+                <li>C/C++</li>
+                <li>Java</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </div> -->
+    <!-- </div> -->
+  </body>
+</html>

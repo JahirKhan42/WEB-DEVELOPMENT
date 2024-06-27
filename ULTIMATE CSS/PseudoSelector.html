@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      .bg {
+        background-color: lightgreen;
+        /* color: white; */
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+      }
+      .bg:hover {
+        background-color: cyan;
+        color: white;
+      }
+
+      .anchor {
+        /* background-color: lightgreen; */
+        text-align: center;
+      }
+      .anchor a:active {
+        color: green;
+      }
+      .anchor a:visited {
+        color: yellow;
+      }
+      p:lang(fr) {
+        color: blue;
+      }
+
+      input:focus {
+        border: 10px solid;
+      }
+
+      h1:first-child {
+        color: red;
+      }
+      h1:nth-child(2n + 2) {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+
+    <div class="bg">
+      <p>This is a div tag</p>
+    </div>
+
+    <div class="anchor">
+      <a href="https://www.learnvern.com" target="_blank">This is a link</a>
+    </div>
+
+    <p>This p tag is without lang attribute</p>
+    <p lang="fr">This p tag is with lang attribute</p>
+
+    <input type="text" name="" id="" placeholder="First Name" />
+  </body>
+</html>

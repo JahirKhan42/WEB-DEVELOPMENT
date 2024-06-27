@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Flexbox</title>
+    <style>
+      .container {
+        /* border: 2px solid red;
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: row;
+         flex-wrap: wrap; 
+        align-content: center;
+        flex-flow: row wrap;
+        row-gap: 30px;
+        column-gap: 20px;
+        gap: 30px 20px; */
+
+        display: flex;
+        display: inline-flex;
+
+        flex-direction: row; /* ltr - default */
+        flex-direction: row-reverse; /* rtl */
+        flex-direction: column; /* top-bottom */
+        flex-direction: column-reverse; /* bottom-top */
+
+        flex-wrap: nowrap; /* one-line */
+        flex-wrap: wrap; /* multi-line */
+
+        align-items: flex-start; /* vertical-align to top */
+        align-items: flex-end; /* vertical-align to bottom */
+        align-items: center; /* vertical-align to center */
+        align-items: stretch; /* same height on all (default) */
+
+        justify-content: flex-start; /* [xxx        ] */
+        justify-content: center; /* [    xxx    ] */
+        justify-content: flex-end; /* [        xxx] */
+        justify-content: space-between; /* [x    x    x] */
+        justify-content: space-around; /* [ x   x   x ] */
+        justify-content: space-evenly; /* [  x  x  x  ] */
+      }
+      .item {
+        /* flex-grow: 1;
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        margin: 4px;
+        background-color: violet; */
+
+        /* This: */
+        flex: 1 0 auto;
+
+        /* Is equivalent to this: */
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+
+        order: 1;
+
+        align-self: flex-start; /* left */
+        margin-left: auto; /* right */
+      }
+
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+      .order-4 {
+        order: 4;
+      }
+
+      .item1 {
+        /* flex-grow: 2; */
+        /* flex-shrink: 2; */
+        align-self: flex-end;
+      }
+
+      .item2 {
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item item2">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+      </div>
+    </main>
+  </body>
+</html>

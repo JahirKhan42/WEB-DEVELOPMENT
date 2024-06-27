@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shadow</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      div {
+        margin: 30px auto;
+        border: 1px solid #adadad;
+        padding: 10px;
+        width: 50%;
+      }
+      .hvb {
+        box-shadow: 10px 10px 5px;
+      }
+      .hvbs {
+        box-shadow: 10px 10px 5px 10px;
+      }
+      .hvbsc {
+        box-shadow: 10px 10px 5px 10px red;
+      }
+      .inset {
+        box-shadow: 10px 10px 5px 10px yellow inset;
+      }
+      .initial {
+        box-shadow: 10px 10px 5px 10px blue initial;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hvb">
+      <h2>This div shows only h-offset, v-offset, and blur</h2>
+    </div>
+    <div class="hvbs">
+      <h2>This div shows only h-offset, v-offset, blur and spread</h2>
+    </div>
+    <div class="hvbsc">
+      <h2>This div shows only h-offset, v-offset, blur and spread and color</h2>
+    </div>
+    <div class="inset">
+      <h2>This div shows only shadow with inset</h2>
+    </div>
+    <div class="initial">
+      <h2>This div shows only shadow with initial</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        /* First-Letter  */
+        h1::first-letter{
+            font-family:  Lucida Sans Unicode;
+            font-size: 3em;
+            color: green;
+            text-shadow: 5px 8px 9px red;
+
+        }
+        h1{
+            color: blue;
+        }
+
+
+        /* First-Line  */
+        h3::first-line{
+            font-family:  Lucida Sans Unicode;
+            font-size: 1cm;
+            color: green;
+            text-shadow: 5px 8px 9px red;
+        }
+
+        /* Before  */
+        p::before{
+            content: "Hello ";
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* After  */
+        p::after{
+            content: " This is an wonderful place to learn the programming languages in vernacular language";
+            color: green;
+            font-size: 20px;
+        }
+
+
+        /* Selection  */
+
+        span::selection{
+            color: red;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- First-Letter  -->
+    <h1>Welcome To LearnVern</h1>
+    <h2>This is an Example First Letter Pseudo Elements</h2>
+    
+
+    <!-- First-Line  -->
+    <h3>Welcome To LearnVern. This is an wonderful place to learn the programming languages in vernacular language.</h1>
+    <h4>This is an Example First Line Pseudo Elements</h2>
+
+        <!-- Before -->
+         <p>Welcome To Learnvern</p>
+
+         <!-- after  -->
+
+         <!-- Selection  -->
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ab?</span>
+</body>
+</html>

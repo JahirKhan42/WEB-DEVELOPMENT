@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Styling</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .thumbnail{
+            
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .transparent{
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+            opacity: 0.1;
+        }
+        .rounded{
+            border-radius: 50%;
+        }
+        .responsive{
+            max-width: 100% !important;
+            height: auto;
+
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img class="thumbnail" src="/IMG_20230912_222630_285.jpg" alt="" width="">
+    <img class="transparent" src="/IMG_20230912_222630_285.jpg" alt="" width="">
+    <img class="rounded" src="/IMG_20230912_222630_285.jpg" alt="" width="">
+    <img class="responsive" src="/IMG_20230912_222630_285.jpg" alt="" width="">
+    <img class="center" src="/IMG_20230912_222630_285.jpg" alt="" width="">
+
+</body>
+</html>

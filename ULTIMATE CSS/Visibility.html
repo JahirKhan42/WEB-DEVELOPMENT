@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            margin: 20px auto;
+            padding: 10px;
+        }
+        div{
+            width: 200px;
+            border: 2px solid black;
+            background-color: skyblue;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 style="visibility: visible;">This heading tag is with visible property</h1> -->
+    <!-- <h1 style="visibility: hidden;">This heading tag is with hidden property</h1> -->
+     <button onclick="hideshow()"> Hide/Show</button>
+     <br>
+
+    <div id="my">
+        This is division that will hide and show
+    </div>
+
+    <script>
+        function hideshow(){
+            if(document.getElementById("my").style.visibility == "visible" ){
+                document.getElementById("my").style.visibility = "hidden"
+            }else{
+                document.getElementById("my").style.visibility = "visible"
+
+            }
+            
+        }
+    </script>
+</body>
+</html>
